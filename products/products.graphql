@@ -6,6 +6,7 @@ type Query {
 
 type Mutation {
   addNewProduct(product: IProduct!): Product
+  addNewProductReview(productId: ID!, review: IReview): Product
 }
 
 type Product {

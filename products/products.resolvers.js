@@ -17,5 +17,9 @@ module.exports = {
     addNewProduct: (_, args) => {
       return productsModel.addNewProduct(args.product);
     },
+
+    addNewProductReview: (_, args) => {
+      return productsModel.addNewProductReview(args.productId, args.review);
+    },
   },
 };
